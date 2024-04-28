@@ -1,0 +1,30 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "include",
+      "-o",
+      "bin/sim",
+      "src/sim.c"
+    ],
+    "directory": "/home/fj/src/eulerian_fluid_sim",
+    "file": "/home/fj/src/eulerian_fluid_sim/src/sim.c",
+    "output": "/home/fj/src/eulerian_fluid_sim/bin/sim"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "include",
+      "-o",
+      "bin/sim",
+      "src/misc.c"
+    ],
+    "directory": "/home/fj/src/eulerian_fluid_sim",
+    "file": "/home/fj/src/eulerian_fluid_sim/src/misc.c",
+    "output": "/home/fj/src/eulerian_fluid_sim/bin/sim"
+  }
+]
