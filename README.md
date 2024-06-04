@@ -3,11 +3,13 @@
 Project based on Ten Minute Physics video here:
 https://www.youtube.com/watch?v=iKAVRgIrUOU
 
+![alt text](./data/screenshot.png)
+
 ## Installing and Running
 
 ```
 # Makefile assumes that raylib is installed locally and headers are available in /usr/local/include.
-# to build raylib on linux, follow instructions at this page:
+# To build raylib on linux, follow instructions at this page:
 # https://github.com/raysan5/raylib/wiki/Working-on-GNU-Linux
 
 sudo apt install libasound2-dev libx11-dev libxrandr-dev libxi-dev libgl1-mesa-dev libglu1-mesa-dev libxcursor-dev libxinerama-dev libwayland-dev libxkbcommon-dev
