@@ -1,5 +1,7 @@
 # eulerian-fluid-sim
 
+A simple wind tunnel fluid simulator. Reads obstacle shape from raster and computes fluid flow direction.
+
 Project based on Ten Minute Physics video here:
 https://www.youtube.com/watch?v=iKAVRgIrUOU
 
