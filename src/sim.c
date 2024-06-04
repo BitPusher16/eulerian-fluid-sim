@@ -7,7 +7,6 @@
 // modeled after example by Matthias Muller.
 // https://www.youtube.com/watch?v=iKAVRgIrUOU
 
-void include_check();
 int** calloc_2d_int(int rows, int cols);
 float** calloc_2d_float(int rows, int cols);
 void free_2d_int(int**, int rows);
