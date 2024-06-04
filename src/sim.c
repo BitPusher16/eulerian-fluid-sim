@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <misc.h>
 #include <raylib.h>
 #include <math.h>
 
@@ -37,16 +36,19 @@ float x_m_y_m_to_weighted_v(
     float xpos_m, float ypos_m
 );
 
-int main(){
+int main(int argc, char** argv){
 
-    include_check();
+    if(argc < 2){
+        printf("%d\n", argc);
+        printf("usage:\n");
+        printf("sim /path/to/raster.png\n");
+        return 0;
+    }
 
-    // external data
-
-    // set raster path with export RASTER_PATH=/...
     // todo: read grid dimensions from raster.
     // update: no, set grid dims independently. not all sims will use raster.
-    const char* fname = getenv("RASTER_PATH");
+    //const char* fname = getenv("RASTER_PATH");
+    const char* fname = argv[1];
     printf("%s\n", fname);
     Image image = LoadImage(fname);
     Color* image_colors = LoadImageColors(image);
@@ -367,19 +369,6 @@ int main(){
 
 }
 
-void include_check(){
-    // quick test for including a header file.
-    // also checking nvim LSP server.
-    printf("hello world\n");
-    printf("answer: %d\n", ANSWER);
-    printf("three times two is: %d\n", times_two(3));
-
-    int x = times_two(5);
-    //int y = times_two(5, 8);
-
-    printf("raylib version major: %d\n", RAYLIB_VERSION_MAJOR);
-}
-
 int** calloc_2d_int(int rows, int cols){
     int** ret = (int**)malloc(rows * sizeof(int*));
     for(int i = 0; i < rows; i++){
@@ -599,6 +588,10 @@ float x_m_y_m_to_weighted_v(
 
 }
 
+int times_three(int x){
+    int ret = x * 3;
+    return ret;
+}
 
 
 
